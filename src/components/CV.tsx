@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CV = (): React.ReactElement => {
-  return <div>CV</div>;
+  return <h1>CV</h1>;
 };
 
 export default CV;

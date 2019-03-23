@@ -1,8 +1,9 @@
 :root {
   /* Color Palette */
+  --mandarin: #ff4c00;
   --mango: orange;
-  --daffodil: #ffd600;
-  --cornflower: #1046A9;
+  --daffodil: #ffde00;
+  --cornflower: #1046a9;
   --arcane: #3c13af;
 
   /* Breakpoints */
@@ -14,7 +15,7 @@
   --xxl-width: 2000px;
 
   /* Fonts */
-  --header-font: 'Pacifico', cursive;
+  --header-font: 'Lobster', cursive;
   --regular-font: 'Roboto', sans-serif;
 }
 
@@ -36,7 +37,12 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--header-font);
   font-weight: normal;
 }
@@ -53,8 +59,8 @@ h3,
 
 /* Utility classes */
 .container {
-  /*padding-right: 15px;*/
-  /*padding-left: 15px;*/
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
