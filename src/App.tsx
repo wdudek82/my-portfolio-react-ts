@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Foo from './components/Foo';
 import Navbar from './components/UI/Navbar';
 
 import Home from './components/Home';
@@ -23,8 +22,6 @@ const App = (): React.ReactElement => {
           <Route path="/cv" component={CV} />
         </Switch>
       </main>
-
-      <Foo />
     </>
   );
 };

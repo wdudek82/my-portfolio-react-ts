@@ -58,6 +58,10 @@ h3,
 }
 
 /* Utility classes */
+.text-mango {
+  color: var(--mango);
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
