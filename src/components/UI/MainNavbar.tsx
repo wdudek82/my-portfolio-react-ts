@@ -1,10 +1,15 @@
-import React from 'react';
-import { MainHeader, Nav, NavList, StyleNavLink } from './Navbar.styles';
+import React, { BaseSyntheticEvent } from 'react';
+import { Nav, NavContainer, NavList, StyleNavLink } from './MainNavbar.styles';
 import Brand from './Brand';
 
-const Navbar = (): React.ReactElement => {
+interface Props {
+  clicked: (e: BaseSyntheticEvent) => void;
+  isMenuOpened: boolean;
+}
+
+const MainNavbar = (props: Props): React.ReactElement => {
   return (
-    <MainHeader>
+    <NavContainer isOpened={props.isMenuOpened} onClick={props.clicked}>
       <Nav>
         <Brand />
         <NavList>
@@ -23,12 +28,12 @@ const Navbar = (): React.ReactElement => {
             <StyleNavLink to="/projects">Projects</StyleNavLink>
           </li>
           <li>
-            <StyleNavLink to="/cv">CV</StyleNavLink>
+            <StyleNavLink to="/resume">Resume</StyleNavLink>
           </li>
         </NavList>
       </Nav>
-    </MainHeader>
+    </NavContainer>
   );
 };
 
-export default Navbar;
+export default MainNavbar;
